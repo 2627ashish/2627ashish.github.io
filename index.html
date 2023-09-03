@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/73d3ebec94.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.150.1/three.min.js" integrity="sha512-pHIFefLE+ZH/TmpBDxPoDyC8kBxD773LqGShSv9VSiMFLluVRKKOFO9JA+TgnQruQEKovPtZ3vEz1Hwo/F4J2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://kit.fontawesome.com/73d3ebec94.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/New Project.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Ashish</span><br/>From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    
+                    <img src="images/user.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>A recent going to graduate in the coming year and
+                        seeking an entry-level position in the field of Web
+                        D. I Possesses a good academic record, and eager to
+                        put my skills to work in a professional setting. To
+                        gain a valuable experience through internships and
+                        volunteer work.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <!-- Skills -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>Programing Languages</span><br>Java,C++<br>Familiar with : Javascript,Node.js,React</li>
+                        </ul>
+                    </div>
+                    <!-- Experience -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-2023</span><br>Winner of Codechef College program</li>
+                            <li><span>2021-2022</span><br>Full-Stack Web development internship from edureka</li>
+                        </ul>
+                    </div>
+                    <!-- Education -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>Pursuinng B.tech from Bhagwan Parshuram Institute of technology</li>
+                            <li><span>2019</span><br>Higher Secondary</li>
+                            <li><span>2017</span><br>Secondary</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fab fa-app-store-ios"></i>
+                    <h2>Online Food Ordering Websie</h2>
+                    <p>An e-commerce site build using MERN stack and showcase the use of filter options and Payment gatewaty for easy payments</p>
+                    <a href="https://tomato-kuse.onrender.com">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Shivaji cycles</h2>
+                    <p>A one stop solution for buying the parts for bikes online and make the task easy for arranging parts</p>
+                    <a href="https://github.com/2627ashish/bike_299">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop"></i>
+                    <h2>Tutorial</h2>
+                    <p>An simple online maths tutorial website </p>
+                    <a href="https://github.com/2627ashish/testMaths">Learn more</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+   
+
+    <!-- COntact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane "></i>ashish400rl@gmail.com</p>
+                    <p><i class="fas fa-duotone fa-phone"></i>8273161338</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/2627ashish"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ashish-chauhan-975b48209"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Ashish_Bhagwan Parshuram institute of technology.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright c Ashish. Made With <i class="fas fa-heart"></i> by Geeks for Geeks</p>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script> 
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyeCWep69mc1Mqz20p6AwZO9TqK4gyxhUcZRiJEEcAEqOuQ0Ib_N7iJJw9p477J2dUbYQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML="Message sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML="";
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
